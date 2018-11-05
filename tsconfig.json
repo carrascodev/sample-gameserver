@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "lib": ["es6"],
+      "module": "commonjs",
+      "noImplicitReturns": true,
+      "outDir": "dist",
+      "sourceMap": false,
+      "target": "es6",
+      "experimentalDecorators": true,
+      "strict": false
+    },
+    "compileOnSave": true,
+    "include": [
+      "src"
+    ]
+  }
+  

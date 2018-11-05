@@ -1,0 +1,26 @@
+{
+  "name": "gameserver-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-ts": "tsc --watch",
+    "serve-dev": "nodemon --exec \"node ./dist/index.js\"",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,magenta.bold\" \"npm run watch-ts\" \"npm run serve-dev\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@colyseus/monitor": "^0.1.10",
+    "colyseus": "^0.9.16",
+    "express": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^10.11.3",
+    "@types/express": "^4.16.0",
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.4",
+    "typescript": "^3.1.1"
+  }
+}
